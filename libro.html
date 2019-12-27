@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>M + B</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<link rel="icon" type="image/png" href="http://s308547761.mialojamiento.es/anc.png">
+
+		<link rel="stylesheet" type="text/css" href="j/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="c/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic|Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
+		<script src="vendors/jquery.easings.min.js"></script>
+
+
+		<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+		<script type="text/javascript" src="j/vendors/jquery.slimscroll.min.js"></script>
+
+		<script type="text/javascript" src="j/jquery.fullPage.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					anchors: ['p-index', 'p-nosotros', 'p-nosmon', 'p-nosbo', 'p-historia', 'p-libro', 'p-lista', 'p-index-1'],
+					menu: '#menu',
+					slidesNavigation: true,
+					controlArrows:false,
+					scrollOverflow:true,
+			});
+
+		});
+		</script>
+	
+
+	</head>
+
+	<body>
+		<div id="header">
+			<ul id="menu">
+				<a href="index.php#p-nosotros"><li data-menuanchor="p-nosotros" class="mnosotros textout">NOSOTROS</li></a>
+				<a href="index.php#p-historia"><li data-menuanchor="p-historia" class="mhistoria textout">HISTORIA</li></a>
+				<a href="index.php#p-libro"><li data-menuanchor="p-libro" class="mlibro textout">LIBRO</li></a>
+				<a href="index.php#p-lista"><li data-menuanchor="p-lista" class="mlista textout">SUEÑOS</li></a>
+				<a href="index.php#p-index"><li data-menuanchor="p-index" class="mindex textout">M+B</li></a>
+				<a href="index.php#p-index/1"><li data-menuanchor="p-index" class="mlocalizacion textout">LOCALIZACIONES</li></a>
+				<a href="index.php#p-index/2"><li data-menuanchor="p-index" class="msrc textout">CONFIRMAR</li></a>
+				<a href="index.php#p-index/3"><li data-menuanchor="p-index" class="mfotos textout">FOTOS</li></a>
+				<a href="index.php#p-index/4"><li data-menuanchor="p-index" class="mconsulta textout">CONSULTA</li></a>
+			</ul>
+		</div>
+
+		<div id="fullpage">
+			<div class="section src">
+
+			<!--I N D E X - - - - - - - - - - - - - - - - - - - - - - - - - -->
+			
+				<div class="slide confirmacion nosotros">
+
+					<h2>¡MUCHAS GRACIAS POR PARTICIPAR!</h2>
+					<p>Hemos recibido tu comentario, muy pronto aparecerá en la web.</p>
+					<a href="index.php"><h2>VOLVER</h2></a>
+
+				</div>
+	
+			</div>
+		</div>
+		
+	</body>
+
+</html>

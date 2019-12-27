@@ -1,0 +1,200 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	font-weight: 300;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	background: url('../i/maitia-bg.png');
+	background-size: cover;
+	position: center;
+	background-attachment: fixed;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul li{
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5{
+	font-weight: 700;
+}
+
+p{
+	font-size: 15px;
+}
+
+a:link{color: #333;}
+a:hover{color: #c3bfae;}
+a:visited{color: #333;}
+a:active{color: #333;}
+
+input, textarea{
+	border: 2px solid #333;
+	box-shadow: none;
+	border-radius: 0px;
+}
+
+input:focus, textarea:focus{
+	border: solid 3px #c3bfae;
+	box-shadow: none;
+	outline: none;
+}
+
+input:-webkit-autofill {
+    background-color: none !important;
+}
+
+
+#fullpage{
+	border: 20px solid #333;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+
+#logo{
+	width: 215px;
+	height: 30px;
+	background: url('../i/maitia.svg');
+	background-size: 215px 30px;
+	margin: 50px auto;
+}
+
+.txt{
+	width: 600px;
+	margin: 50px auto 20px auto;
+}
+
+.txt p{
+	margin: 5px 0;
+}
+
+hr{
+	margin: 20px auto;
+
+
+}
+
+form{
+	width: 600px;
+	margin:0px auto;
+}
+
+form h2{
+	font-size: 12px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+#nombre,
+#email{
+	width: 600px;
+}
+
+
+#pregunta{
+	width: 560px;
+	height: 100px;
+	padding: 20px;
+}
+
+.buttons input{
+	width: 600px;
+	height: 30px;
+	border: 0px;
+	background: none;
+	color: #333;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.buttons:hover input{
+	color: #c3bfae;
+}
+
+
+
+
+
+.gracias{
+	text-align: center;
+}
+
+.gracias h2{
+	font-size: 20px;
+	margin: 50px auto;
+}
+
+.gracias a h3{
+	font-size: 15px;
+	margin-top: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+
+	.txt{
+	width: 400px;
+	}
+
+	form{
+		width: 400px;
+	}
+
+	#nombre,
+	#email{
+		width: 400px;
+	}
+
+
+	#pregunta{
+		width: 360px;
+	}
+
+	.buttons input{
+		width: 400px;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+
+	.txt{
+	width: 300px;
+	}
+
+	form{
+		width: 300px;
+	}
+
+	#nombre,
+	#email{
+		width: 300px;
+	}
+
+
+	#pregunta{
+		width: 260px;
+	}
+
+	.buttons input{
+		width: 300px;
+	}
+
+}
+
+
+
+
+

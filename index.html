@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>M + B</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<link rel="icon" type="image/png" href="anc.png">
+
+		<link rel="stylesheet" type="text/css" href="j/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="c/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic|Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<style>
+			div#load_screen{
+				background: #c1e9e9;
+				opacity: 1;
+				position: fixed;
+			    z-index:200;
+				top: 0px;
+				width: 100%;
+				height: 1600px;
+				overflow: hidden;
+			}
+			div#load_screen > div#loading{
+				color:#FFF;
+				width:300px;
+				height:400px;
+				margin: 100px auto;
+				text-align: center;
+			}
+			div#loading img{
+				margin: 20px auto;
+			}
+		</style>
+		<script>
+			window.addEventListener("load", function(){
+				var load_screen = document.getElementById("load_screen");
+				document.body.removeChild(load_screen);
+			});
+		</script>
+
+		<!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
+		<script src="vendors/jquery.easings.min.js"></script>
+
+
+		<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+		<script type="text/javascript" src="j/vendors/jquery.slimscroll.min.js"></script>
+
+		<script type="text/javascript" src="j/jquery.fullPage.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					anchors: ['p-index', 'p-nosotros', 'p-nosmon', 'p-nosbo', 'p-historia', 'p-libro', 'p-lista'],
+					menu: '#menu',
+					slidesNavigation: true,
+					controlArrows:false,
+					scrollOverflow:true,
+			});
+
+		});
+		</script>
+   
+	</head>
+
+	<body>
+
+		<div id="load_screen">
+			<div id="loading">
+				<img src="loader.gif">
+				<img src="mb.png">
+				<p>Mientras se carga la página asegúrate de que tienes instalada la última versión de tu navegador :)</p>
+			</div>
+		</div>
+
+		<div id="header">
+		<a href="index.html"><div class="titmv"></div></a>
+			<ul id="menu">
+				<a href="#p-nosotros"><li data-menuanchor="p-nosotros" class="mnosotros textout">NOSOTROS</li></a>
+				<a href="#p-historia"><li data-menuanchor="p-historia" class="mhistoria textout">HISTORIA</li></a>
+				<a href="#p-libro"><li data-menuanchor="p-libro" class="mlibro textout">LIBRO</li></a>
+				<a href="#p-lista"><li data-menuanchor="p-lista" class="mlista textout">SUEÑOS</li></a>
+				<a href="#p-index"><li data-menuanchor="index.html" class="mindex textout">M+B</li></a>
+				<a href="#p-index/1"><li data-menuanchor="p-index" class="mlocalizacion textout">LOCALIZACIONES</li></a>
+				<a href="#p-index/2"><li data-menuanchor="p-index" class="msrc textout">CONFIRMAR</li></a>
+				<a href="#p-index/3"><li data-menuanchor="p-index" class="mfotos textout">FOTOS</li></a>
+				<a href="#p-index/4"><li data-menuanchor="p-index" class="mconsulta textout">CONSULTA</li></a>
+			</ul>
+		</div>
+
+		<div id="fullpage">
+			<div class="section">
+
+			<!--I N D E X - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+				<div class="slide index">
+					<div class="containerind">
+						<div id="indextitle">
+							<img src="i/i/mb.svg" >
+						</div>
+
+						<div class="indexcompu">
+							<div id="indexmain">
+
+								<div class="mainelem me1">
+									<a href="#p-historia"><img src="i/i/18.svg"><img src="i/i/18h.svg"></a>
+								</div>
+
+								<div class="mainelem me2">
+									<a href="#p-index/1"><img src="i/i/ermita.svg"><img src="i/i/ermitah.svg"></a>
+								</div>
+
+								<div class="mainelem me3">
+									<a href="#p-nosotros"><img src="i/i/ellael.svg"><img src="i/i/ellaelh.svg"></a>
+									<a href="#p-index/2"><img src="i/i/src.svg"><img src="i/i/srch.svg"></a>
+								</div>
+							</div>
+
+							<div id="indexshare">
+								<h2>comparte nuestro día en las redes sociales con el hashtag #monicayboris18</h2>
+							</div>
+
+							<div id="indexbottom">
+								<a href="#p-libro"><div class="indexlib"></div></a>
+								<a href="#p-index/3"><div class="indexfot"></div></a>
+								<a href="#p-lista"><div class="indexlis"></div></a>
+							</div>
+						</div>
+
+						<div class="indexmovil">
+							<div id="indexmain">
+
+								<div class="mainelem me1">
+									<a href="#p-historia"><img src="i/i/18.svg"><img src="i/i/18h.svg"></a>
+								</div>
+
+								<div class="mainelem me2">
+									<a href="#p-index/1"><img src="i/i/ermita.svg"><img src="i/i/ermitah.svg"></a>
+								</div>
+							</div>
+
+							<div id="indexsecond">
+								<div class="me3">
+
+									<a href="#p-nosotros"><img src="i/im/ellael.svg"></a>
+
+									<a href="#p-index/2"><img src="i/i/src.svg"></a>
+
+								</div>
+							</div>
+
+							<div id="indexshare">
+								<h2>comparte nuestro día en las redes sociales con el hashtag #monicayboris18</h2>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			<!--L O C A L I Z A C I O N E S - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+				<div class="slide localizaciones">
+					
+					<div class="containerloc">
+
+						
+						<div class="locbox">
+							<h1>C</h1>
+							<div class="locver"><p>La ceremonia religiosa tendrá lugar en la Ermita de Nuestra Señora del Buen Camino de Aravaca, situada en el Paseo de la Ermita s/n (28023, Madrid)</p>
+							<p>{salida 10 de la A-6}</p>
+							<h2><a href="https://www.google.co.uk/maps/place/Paseo+de+la+Ermita,+28023+Madrid,+Spain/@40.4614356,-3.7794588,17z/data=!3m1!4b1!4m2!3m1!1s0xd418703110803b1:0xb73fcddebc8a8113?hl=en" target="_blank">ver en google maps</a></h2>
+							</div>
+						</div>
+
+						<div class="locbox lb2">
+							<h1>F</h1>
+							<p>La celebración posterior será muy cerca de la Ermita, en la calle Alhena nº6 (28023 Aravaca, Madrid)</p>
+							<h2><a href="https://www.google.co.uk/maps/place/Calle+Alhena,+6,+28023+Madrid,+Spain/@40.4577594,-3.7738584,17z/data=!3m1!4b1!4m2!3m1!1s0xd41870f605bcccd:0x9f823870ec26259a?hl=en" target="_blank">ver en google maps</a></h2>
+						</div>
+
+						
+					</div>
+
+
+				</div>
+
+			<!--S R C - - - - - - - - - - - - - - - - - - - - - - - - - -->
+				<div class="slide src">
+
+					<div class="containersrc">
+						<h1>SRC</h1>
+
+						<div id="form_container">
+
+							<form method="post" action="src.php">
+												
+								<div id="formbloque1">
+
+										<span>
+											<h2>*Nombre:</h2>
+											<input type="text" id="nombre" name= "nombre" maxlength="250" required/>
+										</span>
+										<span>
+											<h2>*Apellidos:</h2>
+											<input type="text" id="apellidos" name= "apellidos" maxlength="250" required/>
+										</span> 
+										<span>
+											<h2>Número de Teléfono: </h2>
+											<input type="text" id="telefono" name="telefono" maxlength="250"/> 
+										</span> 
+										<span>
+											<h2>e-mail: </h2>
+											<input id="email" name="email" type="email" maxlength="250"/> 
+										</span> 
+										<span class="solobomon"><h2>Sólo Mónica y Boris tendrán acceso a estos datos</h2></span>
+								</div>
+
+								<div id="formbloque2">
+
+									<div id="asistencia" >
+										<h2>¿Vas a poder venir a nuestra boda? </h2>
+										<ul>
+											<li>
+												<label class="choice" for="siceremonia">Sí, sólo a la ceremonia</label>
+												<input id="siceremonia" name="confirmacion" type="radio" value="Sí voy a ir, pero solo a la ceremonia" required/> 
+												
+											</li>
+											<li>
+												<label class="choice" for="si">&nbsp; Sí, a la ceremonia y a la celebración</label>
+												<input id="si" name="confirmacion" type="radio" value="SÍ, voy a ir" /> 
+												
+											</li>
+											<li>
+												<label class="choice" for="no">&nbsp; No, no voy a poder ir</label>
+												<input id="no" name="confirmacion" type="radio" value="NO, no voy a poder ir" />
+												
+											</li>
+									
+										</ul> 
+
+
+										<div id="nopersonas">
+
+											<div id="nopersonastxt">
+												<h2>En caso de venir, especifica cuántas personas vais a ser: </h2>
+											</div>
+
+											<div id="nopersonasinput">
+												<input class="cuantos" type="number" id="cuantos" name= "cuantos" maxlength="1" min="0" max="9"/>
+											</div>
+										
+										</div>
+
+										<div id="nombres" >
+											<h2>Y vuestros nombres: </h2>
+										</div>
+										<div class="nombresdemas">
+												<textarea type="text" id="nombresdemas" name="nombresdemas"></textarea> 
+											 
+										</div>
+
+										<h2>¿Vas a usar el servicio de autobuses? </h2>
+										<select id="bus" name="bus" required>
+											<option value="No, no necesito autobús">No, no necesito autobús</option>
+											<option value="Sí, Ermita-Fiesta">Sí, Ermita-Fiesta</option>
+											<option value="Sí, Fiesta-Madrid">Sí, Fiesta-Madrid</option>
+											<option value="Sí, Ambos trayectos">Sí, Ambos trayectos</option>
+										</select>
+									</div>		
+
+
+									<div id="alergiasvegetariano" >
+										<h2>¿Sigues alguna dieta o tienes alguna alergia que te impida comer determinados alimentos? </h2>
+									</div>
+									<div class="alergia">
+											<textarea type="text" id="alergia" name="alergia"></textarea> 
+										 
+									</div>
+
+									<div id="musica" >
+										<h2>Y por último... ¡Si quieres puedes sugerirnos música para el baile! </h2>
+									</div>
+									<div class="cancion">
+											<textarea type="text" id="cancion" name="cancion"></textarea> 
+										 
+									</div>
+										
+									<div class="buttons">
+										    <!--<input type="hidden" name="form_id" value="971293" />-->
+										    
+											<input id="submit" class="button_text" type="submit" name="submit" value="Enviar"/>
+									</div>
+								</div>
+								
+							</form>	
+
+						</div>
+						
+					</div>
+
+
+				</div>
+
+			<!--F O T O S - - - - - - - - - - - - - - - - - - - - - - - - - -->
+				<div class="slide fotos">
+
+					<div class="instagram">
+						<h2>Todas las fotos que hagáis en instagram con el hashtag #monicayboris18 aparecerán en esta galería</h2>
+					</div>
+
+					<div class="instagramv">
+						<h2>instagram: #monicayboris18 </h2>
+					</div>
+					
+					<div id="instagallery">
+
+						<!-- INSTANSIVE WIDGET --><script src="http://instansive.com/widget/js/instansive.js"></script><iframe src="http://instansive.com/widgets/65e2dcf8d233decebb233143c9fa616a9050bb83.html" id="instansive_65e2dcf8d2" name="instansive_65e2dcf8d2"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+		
+
+					</div>
+
+
+
+				</div>
+
+			<!--C O N T A C T O - - - - - - - - - - - - - - - - - - - - - - - - - -->
+				<div class="slide contacto">
+
+					<div class="containerloc">
+
+						
+						<div class="locbox cbox1">
+							<h1>M</h1>
+							<div class="locver cbox1">
+								<p>+34 636 099 177</p>
+								<p>monicathurne@gmail.com</p>
+								<p>hola@monicayboris.com</p>
+							</div>
+						</div>
+
+						<div class="locbox cbox2">
+							<h1>B</h1>
+							<p>+34 660 991 773</p>
+							<p>borismiranzo@gmail.com</p>
+							<p>hola@monicayboris.com</p>
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+
+			<!--N O S O T R O S - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<div class="section nosotros">
+					
+				<div class="containernos">
+
+					<div id="bomon" class="mon">
+						<a href="#p-nosmon"><div class="foto fmon"><h1>M</h1></div></a>
+						<div class="bmtxt">
+							<p>Mónica, de padre sueco y madre española, tiene 29 años y es la cuarta generación de una saga de Arquitectos. Dibuja como los ángeles y tiene muchísimo talento, ¡tanto que es una diseñadora premiada internacionalmente!</p>
+
+							<h3><a href="#p-nosmon">Sus amigos dicen de ella...</a></h3>
+						</div>
+					</div>
+
+					<div id="bomon" class="bo">
+						<a href="#p-nosbo"><div class="foto fbo"><h1>B</h1></div></a>
+							<div class="bmtxt">
+							<p>Boris tiene 30 años y por sus venas corre sangre francesa y española a partes iguales. </br> Es Ingeniero Industrial y su pasión son los aviones y los coches, ¡aunque también es un motero de pro! </p>
+							<h3><a href="#p-nosbo">Sus amigos dicen de él...</a></h3>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+
+			<!--M O N I C A - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<div class="section nosmon">
+
+				<div class="slide">
+
+					<div id="nostxt" class="montxt">
+
+						<ul>
+
+							<li>
+								<h3>Pati</h3>
+								<p>Mónica es una persona extremadamente buena, junta los requisitos para ser una amiga imprescindible. Siempre, siempre, siempre está disponible. Tiene una paciencia alucinante con nosotros sus amigos. Es inteligente y sensible.</p>
+							</li>
+
+							<li>
+								<h3>Moni Marín</h3>
+								<p>Moni es de esas amigas de verdad, de las que te dice la verdad a la cara sin hacer daño. Después de más de 20 años de amistad puedo decir que es como una hermana para mí, y me ha enseñado muchísimas cosas, sobre todo a usar la lógica en todo momento ;) </br>
+								Aunque muchas veces nos saquemos de nuestras casillas, hemos vivido muchas cosas juntas y eso no se olvida. Y ahora la boda, sin duda, es la mejor de todas y estamos todos deseándolo...</p>
+							</li>
+
+							<li>
+								<h3>Alf</h3>
+								<p>Mónica Patricia, La Grunge de primero de carrera, empeñada en prestarme su calculadora en un examen de historia... Durante estos 12 años ha sido como una hermana más (si se me permite tener más hermanas). Nadie tarda más que ella en enviar un e-mail. Si todo va bien, algún día será mi compañera de estudio.</p>
+							</li>
+
+
+						</ul>
+					</div>
+
+					<a href="#p-nosmon/1"><div class="nosarrow arrowr"></div></a>
+
+				</div>
+
+
+				<div class="slide">
+
+					<div id="nostxt" class="montxt">
+
+
+						<ul>
+							<li>
+								<h3>Mariana</h3>
+								<p>Mon no es sólo todo lo que uno puede esperar de una buena amiga, también es una gran compañera de fatigas. Hemos compartido muchas horas de conversación, otras tantas de trabajo y muchos agobios de última hora, ¡y eso nunca se olvida! </br>
+								A pesar de estar a 1000 Km de distancia puedo decir que me siento orgullosa de que forme parte de ese reducido grupo de amigos que se cuentan con los dedos de una mano. </p>
+							</li>
+
+							<li>
+								<h3>Yaso</h3>
+								<p>La gente, se dice que nace con un pan debajo del brazo, Mon debió nacer con un lápiz...siempre garabateando ideas, en cuadernos, manteles, servilletas en un bar, todo lo explica con dibujos. Es la generosidad personificada, siempre dispuesta a ayudar. ¡¡¡También es la persona más impuntual e indecisa que exista en este mundo!!! </p>	
+							</li>
+
+							<li>
+								<h3>Carmen</h3>
+								<p>La amistad entre Moni y yo data de muchos años ya...
+								Si bien no se puede decir q empezáramos con muy bien pie... (yo tuve siempre mucho pavo) es de las pocas personas que tiene la osadía de casarse una semana después que yo (en mi pleno viaje de novios) y sacarme una sonrisa a pesar de todo... 😡😢😭😂😃🎉👯. </br>
+								Moni y Boris, vais a tener que hacerme la pelota durante muuuuchos meses, qué digo, ¡¡¡años!!!.</p>
+							</li>
+
+						
+
+
+						</ul>
+					</div>
+
+					<a href="#p-nosmon/2"><div class="nosarrow arrowr"></div></a>
+
+				</div>
+
+
+				<div class="slide">
+
+					<div id="nostxt" class="montxt">
+
+						<ul>
+
+							<li>
+								<h3>Leti</h3>
+								<p>Mónica, ¡qué hubiera hecho yo sin ti toda la carrera! </br>
+								Me imagino que seguiría de camarera.</br>
+								Futura socia, perfecta amiga,</br> 
+								Siempre seremos pilar y viga.</br>
+								Boris es ahora tu zuncho de atado…</br>
+								Pero aunque te cases, ¡nuestro estudio no ha empezado!</br>
+								Qué ganas de esta nueva etapa, te va a encantar,</br>
+								La casa por los cimientos tienes que empezar.</p>
+							</li>
+
+
+							<li>
+								<h3>Cristian</h3>
+								<p>Mon (o la Sueca) es la única persona que conozco que es capaz de quedar con alguien en Atocha a las 20:00 para ver una exposición, con otra a las 20:30 para tomarse una cerveza en Pozuelo y por último con otros para cenar en Sanchinarro a las 21:00. Partiendo de la base de que eso ya es imposible, ella sigue pensando que va a llegar a tiempo a todas sus citas metiéndose a la ducha a las 21:15. Así es ella.</p>
+							</li>
+
+
+							<li>
+								<h3>Ale</h3>
+								<p>Mónica es un encanto de niña que en cuanto hablas con ella te hace todo mas fácil, es perfecionista hasta el mínimo detalle y siempre está pendiente de todo. Estoy segura que esta unión les va unir más aún. Son unos grandes confidentes, amigos, novios y todo lo que se les ponga por delante. </p>
+							</li>
+
+							
+
+						</ul>
+					</div>
+
+					<a href="#p-nosmon/3"><div class="nosarrow arrowr"></div></a>
+
+				</div>
+
+
+				<div class="slide">
+
+					<div id="nostxt" class="montxt">
+
+						<ul>
+
+							<li>
+								<h3>Gel</h3>
+								<p>Mon, ¿Qué decir de Mon que nadie sepa? Mon es una persona que siempre, siempre, pero siempre está ahí. ¡Siempre dando su súper limitado tiempo libre para ayudar a los demás! ¡Qué suerte tenemos de tenerla como amiga! Amigas así son difíciles de encontrar ¡¡¡y nosotros la tenemos!!! Y Bo la va a tener como mujer :) ¡¡Pareja perfecta!!</p>
+							</li>
+						
+							<li>
+								<h3>Marisa</h3>
+								<p>Mónica, aunque esté cansada y no haya parado, siempre está disponible para tomarse algo y hacerte reír. La mejor niña  que te puedes  encontrar y es un placer ser su amiga.</p>
+							</li>
+
+							<li>
+								<h3>Natalia</h3>
+								<p>El nombre de Mónica procede de la forma antigua griega mónos, "uno, solo, único". Pues así es ella: Unica.</p>
+							</li>
+
+
+
+
+						</ul>
+					</div>
+
+					<a href="#p-nosmon/4"><div class="nosarrow arrowr"></div></a>
+
+				</div>
+
+
+				<div class="slide">
+
+					<div id="nostxt" class="montxt">
+
+						<ul>		
+							<li>
+								<h3>Luis</h3>
+								<p>Yo personalmente no la conozco mucho, pero parece buena gente.</p>
+							</li>
+
+							<li class="sobrex">
+								<h3>PARTICIPA</h3>
+								<form method="post" action="sobremonica.php">
+
+									<div>
+										<span>
+											<h2>*Nombre:</h2>
+											<input type="text" id="nombre" name= "nombre" maxlength="250" required/>
+										</span>
+									</div>
+
+									<div class="comentario" >
+										<h2>*Escribe sobre Mónica: </h2>
+									
+										<div class="sobremonica">
+											<textarea type="sobremonica" id="sobremonica" name="sobremonica" required></textarea> 
+											 
+										</div>
+									</div>
+
+									<div class="buttons">
+									    <!--<input type="hidden" name="form_id" value="971293" />-->
+									    
+										<input id="submit" class="button_text" type="submit" name="submit" value="Enviar"/>
+									</div>
+
+								</form>
+							</li>
+
+						</ul>
+					</div>
+
+					<a href="#p-nosmon"><div class="nosarrow arrowl"></div></a>
+					<a href="#p-nosbo"><div class="nosother"><p>sobre</p><h2>BORIS</h2></div></a>
+
+				</div>
+			</div>
+
+			<!--B O R I S - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<div class="section nosbo">
+
+				<div class="slide">
+
+					<div id="nostxt" class="montxt">
+
+						<ul>
+
+							<li>
+								<h3>Alf</h3>
+								<p>Barry es un tío muy grande (jeje), la típica persona que da 5 minutos enteros por su equipo de fútbol. Nos llevamos genial desde que presenciamos los misteriosos hechos de levitación y de invocación del kraken del pantano de San Juan del '06.</p>
+							</li>
+
+							<li>
+								<h3>Mariana</h3>
+								<p>Boris es un tío excepcional, gran amigo y mejor compañero. Podría decir que no conozco a nadie más con tan buen talante como él, siempre atento, cariñoso y dispuesto a todo. Es ese tipo de persona a la que siempre que ves cuando vuelves a casa, sientes como si no hubiera pasado el tiempo.</br>
+								Me siento orgullosa de que forme parte de ese reducido grupo de amigos que se cuentan con los dedos de una mano.
+								</p>
+							</li>
+
+							<li>
+								<h3>Yaso</h3>
+								<p>No hace falta conocerle mucho para saber la grandisíma persona y buen amigo que es. Bo, Chu, Churrum, mi compi de padel, (aunque ya no juguemos), siempre esta dispuesto a marcarse un gangnam style, o a beberse un cóctel imbebible a base de huevo. </p>
+							</li>
+
+						
+
+							
+
+						</ul>
+
+					</div>
+
+					<a href="#p-nosbo/1"><div class="nosarrow arrowr"></div></a>
+
+				</div>
+
+
+				<div class="slide">
+
+					<div id="nostxt" class="montxt">
+
+						<ul>
+
+
+							<li>
+								<h3>Marisa</h3>
+								<p>Bo  siempre  con buenos consejos  y sobre todo destacar lo buena persona que es y mejor amigo </p>
+							</li>
+
+
+							<li>
+								<h3>Moni Marín</h3>
+								<p>No sé cuándo apareció Boris en la vida de Moni, pero desde entonces son inseparables. No he visto pareja que esté más compenetrada y que se entienda mejor... Aunque nunca han sido los más cariñosos del grupo, desde que dijeron que se casaban, los mimitos y las muestras de amor se ven cada día. La verdad es que no me imagino mejor compañero de viaje para Moni que Boris... </br>
+								Os deseamos todo lo mejor, porque os lo merecéis... </br>Los Nevado Marín.</p>
+							</li>
+
+							<li>
+								<h3>Pati</h3>
+								<p>Boris es una persona extremadamente buena, disfrutar en compañía de Boris es una gozada. Tiene la capacidad de divertirse como un niño. Pero cuando se habla de cosas serias suele tener una idea muy meditada del tema, y debate como el más adulto de todos nosotros.</p>	
+							</li>
+						</ul>
+
+					</div>
+
+					<a href="#p-nosbo/2"><div class="nosarrow arrowr"></div></a>
+
+				</div>
+
+
+				<div class="slide">
+
+					<div id="nostxt" class="montxt">
+
+						<ul>
+
+							<li>
+								<h3>Cristian</h3>
+								<p>Boris (o Chu) es el tío con más paciencia que conozco ¡de lejos! Nadie en el mundo podría soportar tan bien como él a tanto arquiecto junto hablando las 24 horas del día sobre lo mismo... Creo q si se matriculara en arquitectura, ¡en un par de meses se sacaba la carrera con matrícula!</p>
+							</li>
+
+							<li>
+								<h3>Leti</h3>
+								<p>Boris, ¡mi salvador! Nunca olvidaré ese día que rodé por las escaleras del metro de Milán y me cogiste en tus brazos cuando no podía andar! y pensé... “Oh la la!! Sacré bleu! Mais quel charme, mon Dieu!"</p>
+							</li>
+
+							<li>
+								<h3>GEL</h3>
+								<p>Bo, es un persona que muchos desearían tener como amigo. Bo es alegre, sonriente, simpático ¡y muy, muy listo! ¡Siempre dispuesto a todo por todos! ¡No puede ser más perfecto para ser el marido de Mon! ¡¡¡Qué familia más genial van a ser!!!</p>
+							</li>
+						</ul>
+
+					</div>
+
+					<a href="#p-nosbo/3"><div class="nosarrow arrowr"></div></a>
+
+				</div>
+
+
+				<div class="slide">
+
+					<div id="nostxt" class="montxt">
+
+						<ul>
+
+							<li>
+								<h3>Ale</h3>
+								<p>Bo es una persona muy sencilla y paciente y capaz de aguantar a arquitectos y hasta entenderlos. Es una gran persona. Ambos son vergonzosos de primeras pero las mejores personas que conozco no tienen ninguna mala actitud y siempre estan ahi para lo que se necesite. </p>
+							</li>
+
+							<li>
+								<h3>Natalia</h3>
+								<p> Boris, nombre masculino de origen ruso que significa "fuerte, glorioso combatiente". ¡Eres un crack, tío! Mua </p>
+							</li>
+
+							<li>
+								<h3>Luis</h3>
+								<p> Tampoco le conozco mucho, pero también parece buena gente. </p>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<a href="#p-nosbo/4"><div class="nosarrow arrowr"></div></a>
+
+				</div>
+
+
+				<div class="slide">
+
+					<div id="nostxt" class="montxt">
+
+						<ul>
+
+							<li>	
+
+							<li class="sobrex">
+								<h3>PARTICIPA</h3>
+								<form method="post" action="sobreboris.php">
+
+									<div>
+										<span>
+											<h2>*Nombre:</h2>
+											<input type="text" id="nombre" name= "nombre" maxlength="250" required/>
+										</span>
+									</div>
+
+									<div class="comentario" >
+										<h2>*Escribe sobre Boris: </h2>
+									
+										<div class="sobreboris">
+											<textarea type="sobreboris" id="sobreboris" name="sobreboris" required></textarea> 
+											 
+										</div>
+									</div>
+
+									<div class="buttons">
+									    <!--<input type="hidden" name="form_id" value="971293" />-->
+									    
+										<input id="submit" class="button_text" type="submit" name="submit" value="Enviar"/>
+									</div>
+
+								</form>
+							</li>
+
+						</ul>
+					</div>
+
+					<a href="#p-nosbo"><div class="nosarrow arrowl"></div></a>
+					<a href="#p-nosmon"><div class="nosother"><p>sobre</p><h2>MÓNICA</h2></div></a>
+
+				</div>
+			</div>
+
+
+			<!--H I S T O R I A - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<div class="section historia">
+
+				<div class="containerhis">
+					<h1>18</h1>
+					<p>Desde que estamos juntos, hace ya diez años, el 18 ha sido nuestro número de la suerte. Siempre celebramos juntos los días 18, y éste hemos querido celebrarlo con nuestros familiares y amigos.</p>
+					<p>Esperamos de todo corazón que se convierta en un día especial también para todos vosotros.</p>
+					<p>¡Nos vemos el 18!</p>
+
+				</div>
+
+
+			</div>
+
+
+			<!--L I B R O - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<div class="section libro">
+
+				<div class="containerlib">
+
+					<h1>LIBRO DE VISITAS</h1>
+
+					<form method="post" action="libro.php">
+
+						<div class="lvname">
+							<span>
+								<h2>*Tu Nombre:</h2>
+								<input type="text" id="lvnombre" name= "lvnombre" maxlength="250" required/>
+							</span>
+						</div>
+
+						<div class="comentario" >
+							<h2>*Tu mensaje: </h2>
+						
+							<div class="visita">
+								<textarea type="mensajevisita" id="mensajevisita" name="mensajevisita" required></textarea> 
+								 
+							</div>
+						</div>
+
+						<div class="buttons">
+						    <!--<input type="hidden" name="form_id" value="971293" />-->
+						    
+							<input id="submit" class="button_text" type="submit" name="submit" value="Enviar"/>
+						</div>
+
+					</form>	
+
+					<div class="ec-comment-list">
+
+						<div class="comment">
+							<h2>Natalia Canosa</h2>
+							<p>¡¡Mis más sinceras felicitaciones!! La elección del viaje de novios: japonuda (ya sabes.. estos cojoneses son japonudos). Un beso gordo</p>
+						</div>
+
+						<div class="comment">
+							<h2>Pablo Uriarte</h2>
+							<p>¡¡Muchas Felicidades, Chicos!!</p>
+						</div>
+
+						<div class="comment">
+							<h2>Mariana</h2>
+							<p>¡¡Enhorabuena, Chicos!! ¡Os deseo lo mejor del mundo de ahora en adelante y para siempre! ¡Os lo merecéis sin duda! Os quiero <3</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--L I S T A - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<div class="section lista">
+					
+					<div class="containerhis sue">
+						<h1>LISTA DE BODA</h1>
+
+						<p>Para nosotros el mejor regalo es que podáis compartir con nosotros un día tan importante de nuestras vidas. No necesitamos nada más que vuestra presencia para sentirnos felices.</p>
+
+						<p>No tenemos una lista de boda pero si queréis ayudarnos con nuestro viaje a Japón podéis hacerlo en la siguiente página web con la clave <b>monicayboris</b></p>
+				
+						<a href="https://www.deviaje.com/_/agencia/listas-de-boda" target="_blank"><p><b>deviaje.com</b></p></a>
+						
+					</div>
+
+			</div>
+			
+		</div>
+		
+	</body>
+
+</html>

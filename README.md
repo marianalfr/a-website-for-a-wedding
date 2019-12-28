@@ -20,7 +20,7 @@ I also put a lot of time an effort on this project though not so much as with [t
 
 ### MIT License.
 
-Copyright (c) 2019 Skylabers
+Copyright (c) 2019 Mariana Lerma.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
